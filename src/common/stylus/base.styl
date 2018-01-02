@@ -1,0 +1,89 @@
+@import "variable.styl"
+
+*
+  box-sizing border-box
+  outline none
+  border none
+
+::-webkit-scrollbar
+  width 5px
+  height 5px
+
+::-webkit-scrollbar-track-piece
+  background-color rgba(0, 0, 0, 0.2)
+  -webkit-border-radius 6px
+
+::-webkit-scrollbar-thumb:vertical
+  height 5px
+  background-color rgba(125, 125, 125, 0.7)
+  -webkit-border-radius 6px
+
+::-webkit-scrollbar-thumb:horizontal
+  width 5px
+  background-color rgba(125, 125, 125, 0.7)
+  -webkit-border-radius 6px
+
+body, html
+  line-height 1
+  font-family 'PingFang SC', 'STHeitiSC-Light', 'Helvetica-Light', arial, sans-serif, 'Droid Sans Fallback'
+  user-select none
+  min-width 1280px
+  -webkit-tap-highlight-color transparent
+  background $color-background
+  color $color-text
+
+.clearfix:after
+  display block
+  content ''
+  clear both
+
+.float_left
+  float left
+
+.float_right
+  float right
+
+.pointer
+  cursor pointer
+
+.gray
+  color #999
+  pointer-events none
+
+.gray_font
+  color #e5e5e5
+
+.center
+  text-align center
+
+.dislockline
+  display inline-block
+
+.makecenter
+  position absolute
+  top 0
+  left 0
+  right 0
+  bottom 0
+  margin auto
+
+.multi_center
+  position absolute
+  top 50%
+  width 100%
+  transform translateY(-50%)
+
+.centersize
+  height 98%
+  width 98%
+
+.fontomit
+  overflow hidden
+  text-overflow ellipsis
+  white-space nowrap
+
+.color_blue
+  color $color-sub-theme
+
+.color_aaa
+  color #aaa

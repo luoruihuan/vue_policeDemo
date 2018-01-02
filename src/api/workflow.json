@@ -1,0 +1,339 @@
+{
+  "node_info": {
+    "workflow_node_id": 1,
+    "parent_node_id": 1,
+    "workflow_type_id": 1,
+    "node_name": "新建",
+    "description": "新建通知通告",
+    "carrier_type_id": 1,
+    "supervision": 0,
+    "can_comment": 0,
+    "can_attachment": 1,
+    "target_type": 1,
+    "accept_level": 5,
+    "need_sign":0,
+    "is_begin": 1,
+    "is_end": 0,
+    "is_simple": 1
+  },
+  "node_instance": {
+    "node_instance_id": 1,
+    "parent_instance_id": 1,
+    "carrier_instance_id": 1,
+    "workflow_node_id": 1,
+    "is_signed": 0,
+    "is_finish": 0,
+    "user_id": 1,
+    "user_name": "admin",
+    "time_limit": "2017-07-25 12:23:34"
+  },
+  "field_list": [
+    {
+      "group_name":"基本信息",
+      "field_list": [
+        {
+          "node_id":1,
+          "field_id":1,
+          "field_name":"title",
+          "field_value": "通过地区名称初始化设置，并且下拉框值为地区名称。",
+          "display_name":"通知标题",
+          "group_name":"",
+          "data_type":0,
+          "enum_type":0,
+          "readonly":0,
+          "cpt_type":0,
+          "new_value":""
+        },
+        {
+          "node_id":1,
+          "field_id":1,
+          "field_name":"title",
+          "display_name":"通知标题",
+          "group_name":"",
+          "data_type":0,
+          "enum_type":0,
+          "readonly":0,
+          "cpt_type":1,
+          "new_value":""
+        },
+        {
+          "node_id":1,
+          "field_id":1,
+          "field_name":"title",
+          "display_name":"通知标题",
+          "group_name":"",
+          "data_type":0,
+          "enum_type":0,
+          "readonly":0,
+          "cpt_type":1,
+          "new_value":""
+        },
+        {
+          "node_id":1,
+          "field_id":1,
+          "field_name":"title",
+          "display_name":"通知标题",
+          "group_name":"",
+          "data_type":0,
+          "enum_type":0,
+          "readonly":0,
+          "cpt_type":2,
+          "new_value":""
+        },
+        {
+          "node_id":1,
+          "field_id":2,
+          "field_name":"content",
+          "display_name":"通知正文",
+          "group_name":"",
+          "data_type":0,
+          "enum_type":0,
+          "readonly":0,
+          "cpt_type":3,
+          "new_value":""
+        },
+        {
+          "node_id":1,
+          "field_id":3,
+          "field_name":"noticetype",
+          "display_name":"通知类型",
+          "group_name":"",
+          "data_type":3,
+          "enum_type":1,
+          "readonly":0,
+          "cpt_type":4,
+          "new_value":""
+        }
+      ]
+    },
+    {
+      "group_name":"分组二",
+      "field_list": [
+        {
+          "node_id":1,
+          "field_id":4,
+          "field_name":"pubtime",
+          "display_name":"报送时间",
+          "group_name":"",
+          "data_type":2,
+          "enum_type":0,
+          "readonly":0,
+          "cpt_type":10,
+          "new_value":""
+        },
+        {
+          "node_id":1,
+          "field_id":5,
+          "field_name":"pubuser",
+          "field_value": "通过地区名称初始化设置，并且下拉框值为地区名称。",
+          "display_name":"发布人",
+          "group_name":"",
+          "data_type":5,
+          "enum_type":0,
+          "readonly":1,
+          "cpt_type":0,
+          "new_value":""
+        },
+        {
+          "node_id":1,
+          "field_id":5,
+          "field_name":"pubdept",
+          "field_value": "通过地区名称初始化设置，并且下拉框值为地区名称。",
+          "display_name":"发布单位",
+          "group_name":"",
+          "data_type":6,
+          "enum_type":0,
+          "readonly":1,
+          "cpt_type":0,
+          "new_value":""
+        }
+      ]
+    }
+  ],
+  "workflow_node_operate": [
+    {
+      "operate_id": 1,
+      "node_id": 1,
+      "target_node_id": 1,
+      "target_node_name": "核稿",
+      "has_timelimit": 1,
+      "time_limit": 1,
+      "add_comment": 1,
+      "addcomment_type": 1,
+      "sort_order": 1
+    },
+    {
+      "operate_id": 2,
+      "node_id": 1,
+      "target_node_id": 1,
+      "target_node_name": "保存",
+      "has_timelimit": 1,
+      "time_limit": 1,
+      "add_comment": 1,
+      "addcomment_type": 1,
+      "sort_order": 1
+    },
+    {
+      "operate_id": 2,
+      "node_id": 1,
+      "target_node_id": 1,
+      "target_node_name": "撤消",
+      "has_timelimit": 1,
+      "time_limit": 1,
+      "add_comment": 1,
+      "addcomment_type": 1,
+      "sort_order": 1
+    }
+  ],
+  "workflow_carriers_instance_attachments": [
+    {
+      "id": 1,
+      "carrier_instance_id": 1,
+      "node_instance_id": 1,
+      "file_name":"docker.jpg",
+      "file_path":"/upload",
+      "is_image": 1,
+      "save_code": "4,2394dfadfads",
+      "user_id": 1,
+      "user_name":"admin"
+    },
+    {
+      "id": 2,
+      "carrier_instance_id": 1,
+      "node_instance_id": 1,
+      "file_name":"docker.exe",
+      "file_path":"/upload",
+      "is_image": 0,
+      "save_code": "4,2394dsssfads",
+      "user_id": 1,
+      "user_name":"admin"
+    }
+  ],
+  "new_attachments": [
+    {
+      "carrier_instance_id": 1,
+      "node_instance_id": 1,
+      "file_name":"docker.jpg",
+      "file_path":"/upload",
+      "is_image": 1,
+      "save_code": "4,2394dfadfads",
+      "user_id": 1,
+      "user_name":"admin"
+    },
+    {
+      "carrier_instance_id": 1,
+      "node_instance_id": 1,
+      "file_name":"docker.exe",
+      "file_path":"/upload",
+      "is_image": 0,
+      "save_code": "4,2394dsssfads",
+      "user_id": 1,
+      "user_name":"admin"
+    }
+  ],
+  "workflow_carriers_instance_comments": [
+    {
+      "id": 1,
+      "carrier_type_id": 1,
+      "carrier_type_name":"处置反馈",
+      "comment_list": [
+        {
+          "id": 1,
+          "carrier_instance_id": 1,
+          "node_instance_id": 1,
+          "comment_type": 1,
+          "content": "我是一条反馈",
+          "user_id": 1,
+          "user_name":"admin"
+        },
+        {
+          "id": 2,
+          "carrier_instance_id": 1,
+          "node_instance_id": 1,
+          "comment_type": 1,
+          "content": "我是一条反馈",
+          "user_id": 2,
+          "user_name":"talis"
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "carrier_type_id": 1,
+      "carrier_type_name":"评论",
+      "comment_list": [
+        {
+          "id": 1,
+          "carrier_instance_id": 1,
+          "node_instance_id": 1,
+          "comment_type": 1,
+          "content": "我是一条反馈",
+          "user_id": 1,
+          "user_name":"admin"
+        },
+        {
+          "id": 2,
+          "carrier_instance_id": 1,
+          "node_instance_id": 1,
+          "comment_type": 1,
+          "content": "我是一条反馈",
+          "user_id": 2,
+          "user_name":"talis"
+        }
+      ]
+    }
+  ],
+  "new_comments": [
+    {
+      "carrier_instance_id": 1,
+      "node_instance_id": 1,
+      "comment_type": 1,
+      "content": "我是一条反馈",
+      "user_id": 1,
+      "user_name":"admin"
+    },
+    {
+      "carrier_instance_id": 1,
+      "node_instance_id": 1,
+      "comment_type": 1,
+      "content": "我是一条反馈",
+      "user_id": 2,
+      "user_name":"talis"
+    }
+  ],
+  "workflow_carriers_instance_supervision": [
+    {
+      "id":1,
+      "node_instance_id":1,
+      "sup_user_id":1,
+      "sup_user_name":"admin",
+      "sup_content":"快点干活",
+      "need_sms":1,
+      "need_mail":0,
+      "sent_sms":1,
+      "sent_mail":0
+    },
+    {
+      "id":2,
+      "node_instance_id":1,
+      "sup_user_id":1,
+      "sup_user_name":"admin",
+      "sup_content":"快点干活",
+      "need_sms":1,
+      "need_mail":0,
+      "sent_sms":1,
+      "sent_mail":0
+    }
+  ],
+  "new_supervision": [
+    {
+      "id":1,
+      "node_instance_id":1,
+      "sup_user_id":1,
+      "sup_user_name":"admin",
+      "sup_content":"快点干活",
+      "need_sms":1,
+      "need_mail":0
+    }
+  ]
+}
